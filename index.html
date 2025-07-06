@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festofy - College Event Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0d0d0d, #1a1a2e);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00bfff;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .btn {
+      background: #00bfff;
+      color: black;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to bottom right, rgba(13,13,13,0.95), rgba(26,26,46,0.95)), center/cover no-repeat;
+      background-blend-mode: overlay;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ffffff, #ccccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .event-row, .departments {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 1.5rem;
+      width: 240px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00bfff;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #00ffff;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .about, .reg-section, .contact {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about p, .contact p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    form input, form button {
+      padding: 0.8rem;
+      margin: 0.4rem;
+      border-radius: 10px;
+      border: none;
+    }
+
+    form input {
+      width: 250px;
+    }
+
+    form button {
+      background: #00bfff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #000;
+      color: #888;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Festofy</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+      <a href="#departments">Departments</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="login.html">
+  <button class="btn">Login</button>
+</a>
+
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Festofy</h1>
+    <p style="color:#fff;font-size:1.2rem;margin-top:1rem;">One stop for all college fest excitement!</p>
+    <a href="explore.html">
+  <button class="btn" style="margin-top:2rem;">Explore Events</button>
+</a>
+
+  </section>
+
+  <section id="events">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-row">
+    <a href="byteit.html" style="text-decoration: none;">
+  <div class="card">
+    <h3>Byte IT</h3>
+    <p>IT Dept – Oct</p>
+  </div>
+</a>
+
+     <a href="utsav.html" style="text-decoration: none;">
+  <div class="card">
+    <h3>Utsav</h3>
+    <p>BMS Dept – Nov</p>
+  </div>
+</a>
+
+    <a href="mathpir.html" style="text-decoration: none;">
+  <div class="card">
+    <h3>Math Pi-R</h3>
+    <p>Maths Dept – Oct</p>
+  </div>
+</a>
+
+     <a href="microbia.html" style="text-decoration: none;">
+  <div class="card">
+    <h3>Microbia</h3>
+    <p>Microbiology – Dec</p>
+  </div>
+</a>
+
+  </section>
+
+  <section id="departments">
+    <h2 class="section-title">Departments & Events</h2>
+    <div class="departments">
+      <div class="card">
+        <h3>IT</h3>
+        <p>Byte IT - Hackathons, Coding</p>
+      </div>
+      <div class="card">
+        <h3>BMS</h3>
+        <p>Utsav - Management Games</p>
+      </div>
+      <div class="card">
+        <h3>Maths</h3>
+        <p>Pi-R - Puzzle & Logic Battles</p>
+      </div>
+      <div class="card">
+        <h3>Microbiology</h3>
+        <p>Microbia - Poster & Quiz</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="reg-section">
+    <h2 class="section-title">Register for Events</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Department" required />
+      <input type="text" placeholder="Event Name" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Festofy</h2>
+    <p>
+      Festofy is a central platform to explore, register, and participate in various departmental events of your college held between October and December. Get your digital pass and never miss the excitement!
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: festofy@college.edu | Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Festofy. Designed for college event lovers.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsav - Event Detail</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0d0d0d, #1a1a2e);
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #ccc;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 2rem;
+    }
+
+    .highlights {
+      margin-bottom: 2rem;
+    }
+
+    .highlights ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .highlights li::before {
+      content: "★ ";
+      color: #00ffff;
+    }
+
+    .btn {
+      background: #00bfff;
+      color: black;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    .back-link:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Utsav 2025</h1>
+    <p style="color: #ccc;">Organized by BMS Department</p>
+  </header>
+
+  <div class="container">
+    <div class="meta">
+      <div><strong>Date:</strong> November 5, 2025</div>
+      <div><strong>Venue:</strong> Auditorium Hall</div>
+      <div><strong>Time:</strong> 11:00 AM – 4:00 PM</div>
+    </div>
+
+    <div class="description">
+      <p>
+        Utsav is the annual management fest organized by the BMS Department. It’s a celebration of leadership, creativity, and competition. 
+        Come experience the world of business and fun combined into a series of engaging activities and games!
+      </p>
+    </div>
+
+    <div class="highlights">
+      <h2 style="color:#00ffff;">Event Highlights</h2>
+      <ul>
+        <li>🧠 Business Quiz</li>
+        <li>🎭 Ad-Mad Show</li>
+        <li>📊 Startup Pitch Battle</li>
+        <li>🎯 Management Treasure Hunt</li>
+      </ul>
+    </div>
+
+    <a href="https://forms.gle/your-utsav-form-link" class="btn" target="_blank">Register Now</a><br>
+    <a href="index.html" class="back-link">← Back to Homepage</a>
+  </div>
+
+</body>
+</html>

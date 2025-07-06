@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Events - Festofy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0d0d0d, #1a1a2e);
+      color: white;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      color: #00ffff;
+    }
+
+    .card p {
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    .back-link:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Events</h1>
+    <p>Discover all amazing departmental fests</p>
+  </header>
+
+  <div class="grid">
+    <a href="byteit.html" style="text-decoration: none;">
+      <div class="card">
+        <h3>Byte IT</h3>
+        <p>IT Dept — Oct 12</p>
+      </div>
+    </a>
+    <a href="utsav.html" style="text-decoration: none;">
+      <div class="card">
+        <h3>Utsav</h3>
+        <p>BMS Dept — Nov 5</p>
+      </div>
+    </a>
+    <a href="mathpir.html" style="text-decoration: none;">
+      <div class="card">
+        <h3>Math Pi-R</h3>
+        <p>Maths Dept — Oct 22</p>
+      </div>
+    </a>
+    <a href="microbia.html" style="text-decoration: none;">
+      <div class="card">
+        <h3>Microbia</h3>
+        <p>Microbiology — Dec 4</p>
+      </div>
+    </a>
+    <!-- You can add more events similarly -->
+  </div>
+
+  <a class="back-link" href="index.html">← Back to Homepage</a>
+
+</body>
+</html>
